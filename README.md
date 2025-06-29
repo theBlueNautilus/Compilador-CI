@@ -3,7 +3,7 @@
 
 Este repositório contém o código-fonte de um compilador para a linguagem CI (Constantes Inteiras), desenvolvido para a Atividade 2 da disciplina de Compiladores com Profº Andrei.
 
-[cite\_start]O objetivo do compilador é traduzir um arquivo-fonte que contém apenas uma constante inteira para um arquivo de saída em linguagem Assembly (sintaxe GNU `as` para x86-64). [cite: 8] [cite\_start]O código gerado utiliza uma rotina externa (`runtime.s`) para imprimir o valor da constante na tela. [cite: 18, 19]
+O objetivo do compilador é traduzir um arquivo-fonte que contém apenas uma constante inteira para um arquivo de saída em linguagem Assembly (sintaxe GNU `as` para x86-64). O código gerado utiliza uma rotina externa (`runtime.s`) para imprimir o valor da constante na tela. 
 
 ## Requisitos:
 
@@ -23,12 +23,11 @@ Se a execução for bem-sucedida, uma mensagem de sucesso será exibida, e o arq
 
 ## Exemplos de Teste:
 
-[cite\_start]Conforme solicitado no documento da atividade, seguem dois exemplos de teste: um com um programa CI correto e outro com um erro de sintaxe. [cite: 37]
+Conforme solicitado no documento da atividade, seguem dois exemplos de teste: um com um programa CI correto e outro com um erro de sintaxe.
 
 ### Teste 1: Como executar o compilador para algum arquivo de entrada:
 
-[cite\_start]Um programa correto na linguagem CI contém apenas uma constante inteira. [cite: 4]
-
+Um programa correto na linguagem CI contém apenas uma constante inteira.
 1.  **Caso de teste correto: `teste_correto.ci`**:
 
     ```
@@ -49,7 +48,7 @@ Se a execução for bem-sucedida, uma mensagem de sucesso será exibida, e o arq
 
 ### Teste 2: Casos de erro:
 
-[cite\_start]Um erro de sintaxe na linguagem CI ocorre quando o arquivo de entrada não contém uma constante inteira válida (ex: contém letras). [cite: 26]
+Um erro de sintaxe na linguagem CI ocorre quando o arquivo de entrada não contém uma constante inteira válida (ex: contém letras).
 
 1.  **Caso de teste com erro: `teste_erro.ci`**:
 
@@ -63,7 +62,7 @@ Se a execução for bem-sucedida, uma mensagem de sucesso será exibida, e o arq
     python compilador.py teste_erro.ci
     ```
 
-3.  [cite\_start]**Saída Esperada:** O compilador deve identificar o erro e exibir a mensagem apropriada, sem gerar um arquivo de saída. [cite: 27]
+3.  **Saída Esperada:** O compilador deve identificar o erro e exibir a mensagem apropriada, sem gerar um arquivo de saída.
 
     ```
     Erro: O conteúdo do arquivo 'teste_erro.ci não está no fomato adequado.
