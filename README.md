@@ -1,8 +1,6 @@
 # Compilador para Linguagem CI 
 ## Aluno: João Victor Martins Dantas (20220070761)
 
-Este repositório contém o código-fonte de um compilador para a linguagem CI (Constantes Inteiras), desenvolvido para a Atividade 2 da disciplina de Compiladores com Profº Andrei.
-
 O objetivo do compilador é traduzir um arquivo-fonte que contém apenas uma constante inteira para um arquivo de saída em linguagem Assembly (sintaxe GNU `as` para x86-64). O código gerado utiliza uma rotina externa (`runtime.s`) para imprimir o valor da constante na tela. 
 
 ## Requisitos:
